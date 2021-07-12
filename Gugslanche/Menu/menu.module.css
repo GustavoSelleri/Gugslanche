@@ -1,0 +1,121 @@
+.container {
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    overflow: auto;
+    height: calc(100vh - 100px);
+    width: 70%;
+    background-color: #5e5e5e;
+}
+  
+.container {
+    gap: 2rem;
+}
+
+.imageBorderRadius {
+    border-radius: 3px;
+}
+
+.card {
+    width: 240px;
+    height: 300px;
+    background-color: #dee8d5;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0.8rem;
+}
+
+.cardDescription {
+    padding-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.buttonShowModal {
+    margin-top: 15px;
+    width: 200px;
+    padding: 5px;
+    color: #FFF;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background-color: #000;
+}
+
+.buttonShowModal:hover {
+    background-color: #111;
+}
+
+.buttonShowModal label {
+    margin-right: 10px;
+}
+
+.alerta {
+    color: white;
+    margin: 0 auto;
+}
+
+.close {
+    border: none;
+    outline: none;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    position: relative;
+    color: black;
+    background-color: white;
+    right: -80px;
+}
+
+.modalTitle {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 15px;
+    padding-bottom: 30px;
+}
+
+.modalTitle h2 {
+    position: relative;
+    right: -15px;
+}
+
+.itemDescription {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+}
+
+.buttonAddItemModal {
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    background-color: #000;
+    border-radius: 3px;
+    width: 250px;
+}
+
+.buttonAddItemModal label {
+    margin-right: 10px;
+}
+
+.buttonAddItemModal:hover {
+    background-color: #111;
+}
+
+.productName {
+    margin-bottom: 10px;
+}
+
+.productDescription {
+    margin-bottom: 5px;
+}

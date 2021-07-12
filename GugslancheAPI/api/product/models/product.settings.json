@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "unique": false,
+      "maxLength": 160
+    },
+    "price": {
+      "type": "decimal",
+      "unique": false,
+      "required": true,
+      "min": 1,
+      "default": 0
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "sale": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "orders": {
+      "via": "products",
+      "collection": "orders"
+    },
+    "categoria": {
+      "type": "enumeration",
+      "enum": [
+        "Lanches",
+        "Porcoes",
+        "Sobremesas",
+        "Bebidas"
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.menu {
+    width: 70%;
+    background-color: rgb(53, 53, 53);
+    color: #eaeaea;
+    margin: 0;
+    height: 100px;
+}
+
+.liSelected {
+    border-bottom: 3px solid rgb(233, 178, 0);
+}
+
+.menuTitle {
+    padding: 10px 30px 10px;
+}
+
+.ulMenu {
+    list-style-type: none;
+    background-color: rgb(53, 53, 53);
+    display: flex;
+    color: white;
+}
+
+.liMenu {
+    margin-left: 10px;
+    padding: 20px 20px 10px;
+    cursor: pointer;
+}
+
+.liMenu:hover {
+    color: #FFFFFF88;
+    border-bottom: 3px solid rgb(236, 208, 117);
+}

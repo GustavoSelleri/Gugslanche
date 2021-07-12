@@ -1,0 +1,163 @@
+.pedidos {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(119, 119, 119);
+    width: 30%;
+    color: white;
+    text-align: center;
+    padding: 14px 0px;
+    height: 100%;
+    text-decoration: none;
+    border-left: 5px solid rgb(107, 106, 106);
+}
+
+.pedidosTitle {
+    padding-bottom: 20px;
+}   
+
+.ulPedido {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 10px;
+    display: flex;
+}
+
+.liItem {
+    margin-right: 170px;
+}
+
+
+.liQnt {
+    margin-right: 65px;
+}
+
+.pedidosContainer {
+    overflow: auto;
+    height: calc(100vh - 200px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pedidosContainer::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.pedidosExterno {
+    width: 98%;
+    padding: 5px;
+    background-color: #575757;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 3px;
+}
+
+.pedidoContainer {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    color: rgb(32, 9, 9);
+}
+
+.pedidoProdutoInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10px;
+    width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pedidoProdutoVariavel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: flex-start;
+    width: 160px;
+}
+
+.pedidoPreco {
+    justify-self: center;
+}
+
+.itemHorizontalLine {
+    border: none;
+    border-top: 1px solid rgb(173, 187, 151);
+}
+
+.pedidoAcoes {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.pedidoAcoes div {
+    display: flex;
+    gap: 6px;
+    padding-left: 10px;
+}
+
+.acaoIncrementar,
+.acaoDecrementar,
+.acaoRemover {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    background-color: black;
+    border-radius: 2px;
+    padding: 4px 6px;
+}
+
+.acaoRemover {
+    color: rgb(201, 0, 0);
+    margin-right: 13px;
+}
+
+.acaoIncrementar:hover,
+.acaoDecrementar:hover {
+    color: rgb(110, 110, 110);
+}
+
+.acaoRemover:hover {
+    color: rgb(243, 78, 78);
+}
+
+.totalPedido {
+    display: flex;
+    flex-direction: column;
+    padding-top: 18px;
+    background-color: #353535;
+    color: rgb(209, 209, 209);
+}
+
+.totalDesconto,
+.totalPreco {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+}
+
+.finalizarBotao {
+    padding: 8px;
+    outline: none;
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+.finalizarBotao:hover {
+    background-color: rgb(31, 31, 31);
+}
